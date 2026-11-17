@@ -1,0 +1,20 @@
+{
+  "tool": "get_source",
+  "node": "tinypkg.core.drive",
+  "file": "tinypkg/core.py",
+  "start_line": 24,
+  "end_line": 30,
+  "stop_reason": "complete",
+  "counts": {
+    "lines_returned": 7,
+    "lines_total": 7
+  },
+  "limits": {
+    "max_lines": 60,
+    "hard": {
+      "max_lines": 200
+    },
+    "clamped": []
+  },
+  "source": "def drive(obj, items):\n    obj.step()\n    items.append(1)\n    len(items)\n    os.getcwd()\n    items.mystery()\n    return Child().run()"
+}

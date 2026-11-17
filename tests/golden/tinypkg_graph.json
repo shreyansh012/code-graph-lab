@@ -1,0 +1,588 @@
+{
+  "schema": 1,
+  "nodes": [
+    {
+      "id": "?items.append",
+      "kind": "unresolved",
+      "name": "items.append",
+      "module": "",
+      "file": "",
+      "line": 0,
+      "end_line": 0,
+      "parent": ""
+    },
+    {
+      "id": "?items.mystery",
+      "kind": "unresolved",
+      "name": "items.mystery",
+      "module": "",
+      "file": "",
+      "line": 0,
+      "end_line": 0,
+      "parent": ""
+    },
+    {
+      "id": "?len",
+      "kind": "unresolved",
+      "name": "len",
+      "module": "",
+      "file": "",
+      "line": 0,
+      "end_line": 0,
+      "parent": ""
+    },
+    {
+      "id": "?os.getcwd",
+      "kind": "unresolved",
+      "name": "os.getcwd",
+      "module": "",
+      "file": "",
+      "line": 0,
+      "end_line": 0,
+      "parent": ""
+    },
+    {
+      "id": "ext:os",
+      "kind": "external",
+      "name": "os",
+      "module": "",
+      "file": "",
+      "line": 0,
+      "end_line": 0,
+      "parent": ""
+    },
+    {
+      "id": "tinypkg",
+      "kind": "module",
+      "name": "tinypkg",
+      "module": "tinypkg",
+      "file": "tinypkg/__init__.py",
+      "line": 1,
+      "end_line": 1,
+      "parent": ""
+    },
+    {
+      "id": "tinypkg.app",
+      "kind": "module",
+      "name": "app",
+      "module": "tinypkg.app",
+      "file": "tinypkg/app.py",
+      "line": 1,
+      "end_line": 8,
+      "parent": ""
+    },
+    {
+      "id": "tinypkg.app.main",
+      "kind": "function",
+      "name": "main",
+      "module": "tinypkg.app",
+      "file": "tinypkg/app.py",
+      "line": 5,
+      "end_line": 8,
+      "parent": "tinypkg.app"
+    },
+    {
+      "id": "tinypkg.core",
+      "kind": "module",
+      "name": "core",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 1,
+      "end_line": 37,
+      "parent": ""
+    },
+    {
+      "id": "tinypkg.core.Base",
+      "kind": "class",
+      "name": "Base",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 6,
+      "end_line": 11,
+      "parent": "tinypkg.core"
+    },
+    {
+      "id": "tinypkg.core.Base.run",
+      "kind": "function",
+      "name": "run",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 7,
+      "end_line": 8,
+      "parent": "tinypkg.core.Base"
+    },
+    {
+      "id": "tinypkg.core.Base.step",
+      "kind": "function",
+      "name": "step",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 10,
+      "end_line": 11,
+      "parent": "tinypkg.core.Base"
+    },
+    {
+      "id": "tinypkg.core.Child",
+      "kind": "class",
+      "name": "Child",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 14,
+      "end_line": 16,
+      "parent": "tinypkg.core"
+    },
+    {
+      "id": "tinypkg.core.Child.step",
+      "kind": "function",
+      "name": "step",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 15,
+      "end_line": 16,
+      "parent": "tinypkg.core.Child"
+    },
+    {
+      "id": "tinypkg.core.Other",
+      "kind": "class",
+      "name": "Other",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 19,
+      "end_line": 21,
+      "parent": "tinypkg.core"
+    },
+    {
+      "id": "tinypkg.core.Other.step",
+      "kind": "function",
+      "name": "step",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 20,
+      "end_line": 21,
+      "parent": "tinypkg.core.Other"
+    },
+    {
+      "id": "tinypkg.core.drive",
+      "kind": "function",
+      "name": "drive",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 24,
+      "end_line": 30,
+      "parent": "tinypkg.core"
+    },
+    {
+      "id": "tinypkg.core.outer",
+      "kind": "function",
+      "name": "outer",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 33,
+      "end_line": 37,
+      "parent": "tinypkg.core"
+    },
+    {
+      "id": "tinypkg.core.outer.inner",
+      "kind": "function",
+      "name": "inner",
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 34,
+      "end_line": 35,
+      "parent": "tinypkg.core.outer"
+    },
+    {
+      "id": "tinypkg.util",
+      "kind": "module",
+      "name": "util",
+      "module": "tinypkg.util",
+      "file": "tinypkg/util.py",
+      "line": 1,
+      "end_line": 6,
+      "parent": ""
+    },
+    {
+      "id": "tinypkg.util.helper",
+      "kind": "function",
+      "name": "helper",
+      "module": "tinypkg.util",
+      "file": "tinypkg/util.py",
+      "line": 1,
+      "end_line": 2,
+      "parent": "tinypkg.util"
+    },
+    {
+      "id": "tinypkg.util.spare",
+      "kind": "function",
+      "name": "spare",
+      "module": "tinypkg.util",
+      "file": "tinypkg/util.py",
+      "line": 5,
+      "end_line": 6,
+      "parent": "tinypkg.util"
+    }
+  ],
+  "edges": [
+    {
+      "src": "tinypkg",
+      "dst": "tinypkg.util",
+      "kind": "imports",
+      "trust": "proven",
+      "name": "tinypkg.util",
+      "line": 1,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app",
+      "dst": "tinypkg.app.main",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "main",
+      "line": 5,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app",
+      "dst": "tinypkg",
+      "kind": "imports",
+      "trust": "proven",
+      "name": "tinypkg",
+      "line": 1,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app",
+      "dst": "tinypkg.core",
+      "kind": "imports",
+      "trust": "proven",
+      "name": "tinypkg.core",
+      "line": 2,
+      "count": 2,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.core.drive",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "drive",
+      "line": 7,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.core.outer",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "outer",
+      "line": 8,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "helper",
+      "line": 6,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.core.Base",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "Base",
+      "line": 6,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.core.Child",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "Child",
+      "line": 14,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.core.Other",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "Other",
+      "line": 19,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.core.drive",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "drive",
+      "line": 24,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.core.outer",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "outer",
+      "line": 33,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "ext:os",
+      "kind": "imports",
+      "trust": "proven",
+      "name": "os",
+      "line": 1,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core",
+      "dst": "tinypkg.util",
+      "kind": "imports",
+      "trust": "proven",
+      "name": "tinypkg.util",
+      "line": 2,
+      "count": 2,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Base",
+      "dst": "tinypkg.core.Base.run",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "run",
+      "line": 7,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Base",
+      "dst": "tinypkg.core.Base.step",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "step",
+      "line": 10,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Base.run",
+      "dst": "tinypkg.core.Base.step",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "self.step",
+      "line": 8,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Child",
+      "dst": "tinypkg.core.Child.step",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "step",
+      "line": 15,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Child.step",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "h",
+      "line": 16,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Other",
+      "dst": "tinypkg.core.Other.step",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "step",
+      "line": 20,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.Other.step",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "util.helper",
+      "line": 21,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?items.append",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "items.append",
+      "line": 26,
+      "count": 1,
+      "note": "unresolved"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?items.mystery",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "items.mystery",
+      "line": 29,
+      "count": 1,
+      "note": "unresolved"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?len",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "len",
+      "line": 27,
+      "count": 1,
+      "note": "builtin"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?os.getcwd",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "os.getcwd",
+      "line": 28,
+      "count": 1,
+      "note": "external"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Base.run",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "Child().run",
+      "line": 30,
+      "count": 1,
+      "note": "method name match, 1 candidate"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Base.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Child",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "Child",
+      "line": 30,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Child.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Other.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.outer",
+      "dst": "tinypkg.core.outer.inner",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "inner",
+      "line": 37,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.outer",
+      "dst": "tinypkg.core.outer.inner",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "inner",
+      "line": 34,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.core.outer.inner",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "util.helper",
+      "line": 35,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.util",
+      "dst": "tinypkg.util.helper",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "helper",
+      "line": 1,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.util",
+      "dst": "tinypkg.util.spare",
+      "kind": "defines",
+      "trust": "proven",
+      "name": "spare",
+      "line": 5,
+      "count": 1,
+      "note": ""
+    },
+    {
+      "src": "tinypkg.util.spare",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "helper",
+      "line": 6,
+      "count": 1,
+      "note": ""
+    }
+  ],
+  "skipped": []
+}

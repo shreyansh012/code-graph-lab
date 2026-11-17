@@ -1,0 +1,40 @@
+{
+  "tool": "search_text",
+  "pattern": "def step",
+  "stop_reason": "complete",
+  "counts": {
+    "hits": 3,
+    "files_scanned": 4,
+    "files_total": 4
+  },
+  "limits": {
+    "max_hits": 10,
+    "hard": {
+      "max_hits": 100
+    },
+    "clamped": []
+  },
+  "hits": [
+    {
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 10,
+      "in": "tinypkg.core.Base.step",
+      "text": "def step(self):"
+    },
+    {
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 15,
+      "in": "tinypkg.core.Child.step",
+      "text": "def step(self):"
+    },
+    {
+      "module": "tinypkg.core",
+      "file": "tinypkg/core.py",
+      "line": 20,
+      "in": "tinypkg.core.Other.step",
+      "text": "def step(self):"
+    }
+  ]
+}

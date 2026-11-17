@@ -1,0 +1,290 @@
+{
+  "tool": "trace_flow",
+  "start": "tinypkg.app.main",
+  "stop_reason": "complete",
+  "counts": {
+    "nodes": 14,
+    "edges": 17,
+    "proven": 9,
+    "inferred": 4,
+    "unknown": 4
+  },
+  "limits": {
+    "max_depth": 4,
+    "max_nodes": 50,
+    "hard": {
+      "max_depth": 12,
+      "max_nodes": 500
+    },
+    "clamped": []
+  },
+  "nodes": [
+    {
+      "id": "tinypkg.app.main",
+      "kind": "function",
+      "depth": 0,
+      "path_trust": "proven",
+      "file": "tinypkg/app.py",
+      "line": 5
+    },
+    {
+      "id": "tinypkg.core.drive",
+      "kind": "function",
+      "depth": 1,
+      "path_trust": "proven",
+      "file": "tinypkg/core.py",
+      "line": 24
+    },
+    {
+      "id": "tinypkg.core.outer",
+      "kind": "function",
+      "depth": 1,
+      "path_trust": "proven",
+      "file": "tinypkg/core.py",
+      "line": 33
+    },
+    {
+      "id": "tinypkg.util.helper",
+      "kind": "function",
+      "depth": 1,
+      "path_trust": "proven",
+      "file": "tinypkg/util.py",
+      "line": 1
+    },
+    {
+      "id": "?items.append",
+      "kind": "unresolved",
+      "depth": 2,
+      "path_trust": "unknown"
+    },
+    {
+      "id": "?items.mystery",
+      "kind": "unresolved",
+      "depth": 2,
+      "path_trust": "unknown"
+    },
+    {
+      "id": "?len",
+      "kind": "unresolved",
+      "depth": 2,
+      "path_trust": "unknown"
+    },
+    {
+      "id": "?os.getcwd",
+      "kind": "unresolved",
+      "depth": 2,
+      "path_trust": "unknown"
+    },
+    {
+      "id": "tinypkg.core.Base.run",
+      "kind": "function",
+      "depth": 2,
+      "path_trust": "inferred",
+      "file": "tinypkg/core.py",
+      "line": 7
+    },
+    {
+      "id": "tinypkg.core.Base.step",
+      "kind": "function",
+      "depth": 2,
+      "path_trust": "inferred",
+      "file": "tinypkg/core.py",
+      "line": 10
+    },
+    {
+      "id": "tinypkg.core.Child",
+      "kind": "class",
+      "depth": 2,
+      "path_trust": "proven",
+      "file": "tinypkg/core.py",
+      "line": 14
+    },
+    {
+      "id": "tinypkg.core.Child.step",
+      "kind": "function",
+      "depth": 2,
+      "path_trust": "inferred",
+      "file": "tinypkg/core.py",
+      "line": 15
+    },
+    {
+      "id": "tinypkg.core.Other.step",
+      "kind": "function",
+      "depth": 2,
+      "path_trust": "inferred",
+      "file": "tinypkg/core.py",
+      "line": 20
+    },
+    {
+      "id": "tinypkg.core.outer.inner",
+      "kind": "function",
+      "depth": 2,
+      "path_trust": "proven",
+      "file": "tinypkg/core.py",
+      "line": 34
+    }
+  ],
+  "edges": [
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.core.drive",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "drive",
+      "line": 7,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.core.outer",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "outer",
+      "line": 8,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.app.main",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "helper",
+      "line": 6,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?items.append",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "items.append",
+      "line": 26,
+      "count": 1,
+      "note": "unresolved"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?items.mystery",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "items.mystery",
+      "line": 29,
+      "count": 1,
+      "note": "unresolved"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?len",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "len",
+      "line": 27,
+      "count": 1,
+      "note": "builtin"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "?os.getcwd",
+      "kind": "calls",
+      "trust": "unknown",
+      "name": "os.getcwd",
+      "line": 28,
+      "count": 1,
+      "note": "external"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Base.run",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "Child().run",
+      "line": 30,
+      "count": 1,
+      "note": "method name match, 1 candidate"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Base.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Child",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "Child",
+      "line": 30,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Child.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.drive",
+      "dst": "tinypkg.core.Other.step",
+      "kind": "calls",
+      "trust": "inferred",
+      "name": "obj.step",
+      "line": 25,
+      "count": 1,
+      "note": "method name match, 3 candidates"
+    },
+    {
+      "src": "tinypkg.core.outer",
+      "dst": "tinypkg.core.outer.inner",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "inner",
+      "line": 37,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.Base.run",
+      "dst": "tinypkg.core.Base.step",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "self.step",
+      "line": 8,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.Child.step",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "h",
+      "line": 16,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.Other.step",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "util.helper",
+      "line": 21,
+      "count": 1
+    },
+    {
+      "src": "tinypkg.core.outer.inner",
+      "dst": "tinypkg.util.helper",
+      "kind": "calls",
+      "trust": "proven",
+      "name": "util.helper",
+      "line": 35,
+      "count": 1
+    }
+  ]
+}
